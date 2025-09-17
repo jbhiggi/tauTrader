@@ -150,9 +150,9 @@ For full explanations of each stage, see:
 <!-- Second row: PR curves side by side -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_pr_curve_val_tau_mapping.png" 
-       alt="Validation PR Curve" width="55%">
+       alt="Validation PR Curve" width="45%">
   <img src="master_figures/APPL_daily_experiment_pr_curve_test_tau_naive.png" 
-       alt="Test PR Curve Naive" width="55%">
+       alt="Test PR Curve Naive" width="45%">
 </p>
 <p align="center"><sub><i>Figure 2. <b>Validation Precision–Recall Curve (before mapping)</b> – The color of the curve encodes the classification threshold used at each point. The dashed red line indicates the random baseline (precision = 0.62). The red point represents the chosen optimal threshold.  
 <br>Figure 3. <b>Test Precision–Recall Curve (before mapping)</b> – The color of the curve encodes the classification threshold used at each point. The dashed red line indicates the random baseline (precision = 0.55). The red point represents the same (naïve) threshold from the validation PR curve.</i></sub></p>
@@ -182,9 +182,9 @@ For full explanations of each stage, see:
 <!-- Second row: PR curves side by side -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_pr_curve_val_tau_mapping.png" 
-       alt="Validation PR Curve with Optimal τ" width="55%">
+       alt="Validation PR Curve with Optimal τ" width="45%">
   <img src="master_figures/APPL_daily_experiment_pr_curve_test_tau_mapping.png" 
-       alt="Test PR Curve with Optimal τ" width="55%">
+       alt="Test PR Curve with Optimal τ" width="45%">
 </p>
 <p align="center"><sub><i>Figure 5. <b>Validation PR Curve with Optimal τ</b> – Validation set PR curve with the point chosen for k-fold derivation marked.  
 <br>Figure 6. <b>Test PR Curve with Optimal τ</b> – Test set PR curve with the k-fold–derived optimal threshold marked.</i></sub></p>
