@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-lstm"
+version = "0.1.0"
+description = "Categorical stock price prediction with deep LSTM networks"
+authors = [{ name = "Jack Higginson" }]
+readme = "README.md"
+requires-python = "==3.10.*"
+dependencies = [
+  "numpy<2.0",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "seaborn",
+  "pyyaml",
+  "tensorflow",   # provides tensorflow.keras
+  "tqdm"
+]
+
+[project.urls]
+Homepage = "https://github.com/<yourusername>/quant-lstm"
+
+[tool.setuptools]
+packages = ["quant_lstm"]
+
+[tool.setuptools.package-data]
+quant_lstm = ["config/*.yaml"]

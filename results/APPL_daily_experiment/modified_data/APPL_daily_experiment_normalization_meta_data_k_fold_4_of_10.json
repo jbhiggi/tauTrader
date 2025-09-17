@@ -1,0 +1,87 @@
+{
+  "scaling_type": {
+    "volume": "robust",
+    "other_features": "minmax"
+  },
+  "feature_range": [
+    -1,
+    1
+  ],
+  "features": {
+    "volume": {
+      "scaler": "robust",
+      "center": 45326874.0,
+      "scale": 48367084.0
+    },
+    "open": {
+      "scaler": "minmax",
+      "min": 119.03,
+      "max": 324.74
+    },
+    "high": {
+      "scaler": "minmax",
+      "min": 120.4031,
+      "max": 327.85
+    },
+    "low": {
+      "scaler": "minmax",
+      "min": 116.21,
+      "max": 323.35
+    },
+    "close": {
+      "scaler": "minmax",
+      "min": 116.36,
+      "max": 327.2
+    },
+    "SMA": {
+      "scaler": "minmax",
+      "min": 121.39875000000002,
+      "max": 319.86
+    },
+    "MACD": {
+      "scaler": "minmax",
+      "min": -18.66007196673493,
+      "max": 11.402983841488322
+    },
+    "MACD_signal": {
+      "scaler": "minmax",
+      "min": -15.221018768079338,
+      "max": 10.814903801104688
+    },
+    "MACD_histogram": {
+      "scaler": "minmax",
+      "min": -4.351671871640954,
+      "max": 6.143892859509278
+    },
+    "Bollinger_Upper": {
+      "scaler": "minmax",
+      "min": 125.45276149605924,
+      "max": 345.3244087436643
+    },
+    "Bollinger_Lower": {
+      "scaler": "minmax",
+      "min": 114.5463473863141,
+      "max": 309.0962968610461
+    },
+    "k_values": {
+      "scaler": "minmax",
+      "min": 0.6926450651768861,
+      "max": 99.67274440593668
+    },
+    "d_values": {
+      "scaler": "minmax",
+      "min": 3.0469380840193767,
+      "max": 97.82767296155964
+    },
+    "return_pct": {
+      "scaler": "minmax",
+      "min": -0.0481955767221475,
+      "max": 0.0491157062664184
+    },
+    "day_of_week": {
+      "scaler": "minmax",
+      "min": 0.0,
+      "max": 4.0
+    }
+  }
+}

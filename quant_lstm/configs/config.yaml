@@ -1,0 +1,47 @@
+run:
+  basename: "APPL_daily_experiment"   # used for results/<basename>/
+
+data:
+  # RAW OHLC input (used for OHLC_df_name)
+  raw_data_path: "raw_data/"
+  raw_data_filename: "apple_data.csv"
+
+  feature_cols: ['close', 'open', 'high', 'low', 'volume', 'SMA']
+  window_size: 30
+  lookahead: 8
+  threshold: 0.003
+  direction: 'DOWN'
+
+split:
+  train: 0.7
+  val: 0.15
+
+preprocessing:
+  clipping:
+    lower_pct: 0.01
+    upper_pct: 0.99
+  normalization:
+    feature_range: [-1, 1]   # becomes a tuple (-1, 1) in code
+
+model:
+  units: 16
+  dropout_rate: 0.2
+  learning_rate: 0.001
+  l2_lambda: 0.001
+
+training:
+  epochs: 20
+  batch_size: 8
+  early_stop_patience: 40
+  class_weight_override: null
+
+tau_mapping:
+  model: 'best_model' # 'best_model' or 'final_model'
+  thr_point: null
+  prec_point: null
+  rec_point: 0.87 # Recall value to select desired validation set PR-curve point
+  tau_validation_mapping_value: 0.530  # Value chosen from the PR curve to map validation set to test set
+
+general:
+  verbose: true
+  seed: 11
