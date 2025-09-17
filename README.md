@@ -143,16 +143,16 @@ For full explanations of each stage, see:
 <!-- First row: Confusion matrix centered -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_val_confusion_matrix.png" 
-       alt="Confusion Matrix" width="35%">
+       alt="Confusion Matrix" width="50%">
 </p>
 <p align="center"><sub><i>Figure 1. <b>Confusion Matrix</b> – Raw classification outcomes (TP, FP, TN, FN) for the validation set. The numbers are calculated from the default threshold τ_val = 0.5.</i></sub></p>
 
 <!-- Second row: PR curves side by side -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_pr_curve_val_tau_mapping.png" 
-       alt="Validation PR Curve" width="40%">
+       alt="Validation PR Curve" width="55%">
   <img src="master_figures/APPL_daily_experiment_pr_curve_test_tau_naive.png" 
-       alt="Test PR Curve Naive" width="40%">
+       alt="Test PR Curve Naive" width="55%">
 </p>
 <p align="center"><sub><i>Figure 2. <b>Validation Precision–Recall Curve (before mapping)</b> – The color of the curve encodes the classification threshold used at each point. The dashed red line indicates the random baseline (precision = 0.62). The red point represents the chosen optimal threshold.  
 <br>Figure 3. <b>Test Precision–Recall Curve (before mapping)</b> – The color of the curve encodes the classification threshold used at each point. The dashed red line indicates the random baseline (precision = 0.55). The red point represents the same (naïve) threshold from the validation PR curve.</i></sub></p>
@@ -175,16 +175,16 @@ For full explanations of each stage, see:
 <!-- First row: Threshold mapping centered -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_val_to_test_fit.png" 
-       alt="Validation-to-Test Threshold Mapping" width="45%">
+       alt="Validation-to-Test Threshold Mapping" width="55%">
 </p>
 <p align="center"><sub><i>Figure 4. <b>Validation-to-Test Threshold Mapping</b> – Pairs of optimal thresholds from validation and test folds (blue points) with a fitted linear model (red dashed line) and ±1σ error band (shaded region).</i></sub></p>
 
 <!-- Second row: PR curves side by side -->
 <p align="center">
   <img src="master_figures/APPL_daily_experiment_pr_curve_val_tau_mapping.png" 
-       alt="Validation PR Curve with Optimal τ" width="40%">
+       alt="Validation PR Curve with Optimal τ" width="55%">
   <img src="master_figures/APPL_daily_experiment_pr_curve_test_tau_mapping.png" 
-       alt="Test PR Curve with Optimal τ" width="40%">
+       alt="Test PR Curve with Optimal τ" width="55%">
 </p>
 <p align="center"><sub><i>Figure 5. <b>Validation PR Curve with Optimal τ</b> – Validation set PR curve with the point chosen for k-fold derivation marked.  
 <br>Figure 6. <b>Test PR Curve with Optimal τ</b> – Test set PR curve with the k-fold–derived optimal threshold marked.</i></sub></p>
@@ -216,8 +216,8 @@ In practice, our K-fold cross-validation mapping can be extended to run a full b
 ## How to Reproduce
 
 ```bash
-git clone https://github.com/<you>/sambo-rolling-stability.git
-cd sambo-rolling-stability
+git clone https://github.com/jbhiggi/tauTrader
+cd tauTrader 
 pip install -e .
 
 # Run all experiments
